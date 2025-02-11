@@ -6,10 +6,10 @@ from PIL import Image
 
 st.set_page_config(page_title='diseases prediction outbreaks', page_icon='doctor-fill', layout='wide')
 
-diabetes=pickle.load(open(r'C:\Users\User\Documents\predictions\training_modules\diabetes.sav','rb'))
-heart=pickle.load(open(r'C:\Users\User\Documents\predictions\training_modules\heart.sav','rb'))
-parkinson=pickle.load(open(r'C:\Users\User\Documents\predictions\training_modules\parkinsons.sav','rb'))
-malediabetes=pickle.load(open(r'C:\Users\User\Documents\predictions\training_modules\diabetesmale.sav','rb'))
+diabetes=pickle.load(open(r'C:/Users/User/Documents/predictions/training_modules/diabetes.sav','rb'))
+heart=pickle.load(open(r'C:/Users/User/Documents/predictions/training_modules/heart.sav','rb'))
+parkinson=pickle.load(open(r'C:/Users/User/Documents/predictions/training_modules/parkinsons.sav','rb'))
+malediabetes=pickle.load(open(r'C:/Users/User/Documents/predictions/training_modules/diabetesmale.sav','rb'))
 
 with st.sidebar:
     choice=option_menu.option_menu('Disease Prediction System',['Diabetes disease','Heart disease','Parkinsons disease'],menu_icon='hospital-fill',icons=['activity','heart-fill','person-fill'])
@@ -17,7 +17,7 @@ with st.sidebar:
 if choice=='Diabetes disease':
         st.title('Diabetes disease prediction system using AI/ML')
         #st.subheader('Fill in the following details to predict diabetes disease')
-        img=Image.open(r'C:\Users\User\Documents\predictions\training_modules\88eb89d4-a1e5-45fd-9ec8-46847f6bb347-765x765.jpg')
+        img=Image.open(r'C:/Users/User/Documents/predictions/training_modules/88eb89d4-a1e5-45fd-9ec8-46847f6bb347-765x765.jpg')
         st.image(img,width=150)
         st.subheader('Fill in the following details to predict diabetes disease')
         malefemale=st.radio("Select Patient's Gender",('Male','Female'))
@@ -90,7 +90,7 @@ if choice=='Diabetes disease':
 
 elif choice=='Heart disease':
      st.title('Heart disease prediction system using AI/ML')
-     img2=Image.open(r'C:\Users\User\Documents\predictions\training_modules\heart-intro-photo-1.jpg')
+     img2=Image.open(r'C:/Users/User/Documents/predictions/training_modules/heart-intro-photo-1.jpg')
      st.image(img2,width=150)
      st.subheader('Enter the details of the patient')
 
@@ -145,7 +145,7 @@ elif choice=='Heart disease':
 #########################################################################################################################
 elif choice=='Parkinsons disease':
       st.title('Parkisons disesase prediction system using AI/ML')
-      img3=Image.open(r'C:\Users\User\Documents\predictions\training_modules\images.jfif')
+      img3=Image.open(r'C:/Users/User/Documents/predictions/training_modules/images.jfif')
       st.image(img3,width=180)
       st.subheader('Enter the details of the patient')
 
