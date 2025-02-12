@@ -12,10 +12,10 @@ parkinson=pickle.load(open(r'C:/Users/User/Documents/predictions/training_module
 malediabetes=pickle.load(open(r'C:/Users/User/Documents/predictions/training_modules/diabetesmale.sav','rb'))
 
 with st.sidebar:
-    choice=option_menu.option_menu('Disease Prediction System',['Diabetes disease','Heart disease','Parkinsons disease'],menu_icon='hospital-fill',icons=['activity','heart-fill','person-fill'])
+    choice=option_menu.option_menu('Diseases Diagnosis System',['Diabetes disease','Heart disease','Parkinsons disease'],menu_icon='hospital-fill',icons=['activity','heart-fill','person-fill'])
 
 if choice=='Diabetes disease':
-        st.title('Diabetes disease prediction system using AI/ML')
+        st.title('Diabetes Diagnose system')
         #st.subheader('Fill in the following details to predict diabetes disease')
         img=Image.open(r'C:\Users\User\Documents\predictions\training_modules\88eb89d4-a1e5-45fd-9ec8-46847f6bb347-765x765.jpg')
         st.image(img,width=150)
@@ -89,7 +89,7 @@ if choice=='Diabetes disease':
 ##########################################################################################################################
 
 elif choice=='Heart disease':
-     st.title('Heart disease prediction system using AI/ML')
+     st.title('Heart Disease Diagnose System ')
      img2=Image.open(r'C:\Users\User\Documents\predictions\training_modules\heart-intro-photo-1.jpg')
      st.image(img2,width=150)
      st.subheader('Enter the details of the patient')
@@ -144,7 +144,7 @@ elif choice=='Heart disease':
 
 #########################################################################################################################
 elif choice=='Parkinsons disease':
-      st.title('Parkisons disesase prediction system using AI/ML')
+      st.title('Parkisons Disease Diagnose System')
       img3=Image.open(r'C:\Users\User\Documents\predictions\training_modules\images.jfif')
       st.image(img3,width=180)
       st.subheader('Enter the details of the patient')
